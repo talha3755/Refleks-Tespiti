@@ -70,3 +70,14 @@ Makine öğreniminde de asıl amaç bilgisayarın sayısal öğrenme ve model ta
 programlanmadığı sonuçları öğrenebilme kabiliyeti” olarak tanımlamıştır. Makine
 öğreniminde makinelerin öğrenim yapabilmesi için belirli yöntemler vardır.
 
+![Makine Öğrenmesi Yöntemleri](resim.PNG)
+
+# Yapay Sinir Ağları
+Yapay sinir ağları derin öğrenmenin temel anahtarıdır. Yapay sinir ağları kurulurken
+insan nöral sistemi baz alınır ve işlemler insan beyninde nasıl yapılıyorsa aynı
+işlemler yapay sinir ağlarında da yapılır. Yapay sinir ağlarına konvolüsyonel sinir ağı
+örnek verilebilir. Konvolüsyonel sinir ağı (CNN), ileri beslemeli derin yapay sinir
+ağıdır. Yapay sinir ağları katmanlardan oluşur, bu katmanlar sırasıyla giriş katmanı,
+gizli katman ve çıkış katmanıdır.
+
+
