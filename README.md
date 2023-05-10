@@ -106,7 +106,7 @@ aşkın atıfta bulunulmuştur ve birçok yüksek teknolojiye yeni çalışma sa
 açmıştır.Günümüzde deep fake gibi fotoğrafların canlandırılmasına dayanan sistemler veya
 siyah beyaz fotoğrafların renkli resimlere dönüştürülmesi, gündüz resimlerini gece,
 gece resimlerini gündüz resimlere dönüştürme gibi alanlarda kullanılmaktadır.
-
+![Geçmişten Günümüze Üretilen Sentetik Görüntüler](resim3.PNG)
 
 # Çalışma prensibi
 GAN’ın iki ana yapısı(network) vardır: Üretici(generator), ayırt edici(discriminator)
@@ -120,5 +120,8 @@ gönderecektir bu cevaba göre üretici kendini yenileyip geliştirmeye çalış
 Döngü bu şekilde devam eder ve sonunda üreticinin ayırt edicinin elindeki resmi
 daha benzer resimler üretmeye başladığı görülür. GAN diğer yapay sinir ağlarının
 aksine kendi kendine yeni ve anlamlı veriler üretebilmektedir.
+![ GAN Çalışma Prensibi](resim4.PNG)
 
+## Proje klasörüne aşağıdaki linkten ulaşabilirsiniz.
+https://drive.google.com/drive/folders/1sg3-_hpfXsTZXR1KhgqcwmPB3BWZpJPe?usp=share_link
 
