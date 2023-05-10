@@ -80,4 +80,45 @@ işlemler yapay sinir ağlarında da yapılır. Yapay sinir ağlarına konvolüs
 ağıdır. Yapay sinir ağları katmanlardan oluşur, bu katmanlar sırasıyla giriş katmanı,
 gizli katman ve çıkış katmanıdır.
 
+![Yapay Sinir Ağı](resim2.PNG)
+
+# İleri yayılım algoritması
+Derin öğrenme eğitimi yapılırken ilk aşamada ileri yayılım algoritması yapılır.
+İngilizcede Feed Forward veya Forward Propagation yaygın kullanılırlar. İlk etapta
+giriş katmanındaki nöronlara değerleri verilir. Bundan sonra rastgele bir şekilde
+nöronlara bias ve ağırlık değerleri verilir. Değerler verildikten sonra ileri yönde işlem
+başlar. İşlemde herbir nörona giren değerler input ve ağırlık değerleriyle çarpılır.
+Sonra bu nörona giren bütün değerler toplanır.
+
+#  Geri yayılım algoritması
+Yapay sinir ağı tasarlanırken ilk aşamada ağırlık ve bias değerlerinin rastgele
+verildiğini görmüştük. Bu kısımda ise ileri yayılım algoritması yapıldıktan sonra
+sistemde bir de geri yayılım algoritması yapılarak hata oranı bulunur ve ağırlık
+değerleri güncellenir. Ağırlık değerlerinin güncellenme amacı optimum değeri
+verecek ağırlık katsayılarını bulmaktır.
+
+# Çekişmeli Üretici Ağ (GAN)
+2014 yılında Ian Goodfellow’un “Generative adversarial nets” ismini verdiği makale
+sonucu ortaya çıkan bir yapıdır. Bu yapıda amaç sentetik veri üretmektir. Sisteme
+yeterli sayıda örnek verildiği sürece sistem bu örnekleri derin öğrenme yöntemiyle
+öğrenip yeni resimler üretebiliyor. Ian Goodfellow’un çalışması günümüzde 45 bini
+aşkın atıfta bulunulmuştur ve birçok yüksek teknolojiye yeni çalışma sahaları
+açmıştır.Günümüzde deep fake gibi fotoğrafların canlandırılmasına dayanan sistemler veya
+siyah beyaz fotoğrafların renkli resimlere dönüştürülmesi, gündüz resimlerini gece,
+gece resimlerini gündüz resimlere dönüştürme gibi alanlarda kullanılmaktadır.
+
+
+# Çalışma prensibi
+GAN’ın iki ana yapısı(network) vardır: Üretici(generator), ayırt edici(discriminator)
+Bu iki yapı sürekli birbiri ile bağlantılı çalışırlar. Üretici bir resim üretir, ayırt edici
+ise üreticinin ürettiği resmin gerçek mi yoksa sahte mi olduğunu belirtir. Başlangıçta
+elde eğitilmiş herhangi bir yapı olmadığı için ikisi de sıfırdan birlikte eğitilecektir.
+Eğitim esnasında bu ikisi birbiriyle bağlantılı olmalıdır ayırt edicinin elinde gerçek
+bir resim olacaktır, üretici oluşturduğu resmi ayırt ediciye gönderecektir. Ayırt edici,
+üreticinin ürettiği resim ile kendi elindeki resmi karşılaştırıp üreticiye bir cevap
+gönderecektir bu cevaba göre üretici kendini yenileyip geliştirmeye çalışacaktır.
+Döngü bu şekilde devam eder ve sonunda üreticinin ayırt edicinin elindeki resmi
+daha benzer resimler üretmeye başladığı görülür. GAN diğer yapay sinir ağlarının
+aksine kendi kendine yeni ve anlamlı veriler üretebilmektedir.
+
 
